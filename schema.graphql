@@ -1,0 +1,15 @@
+type Post{
+    id: Int!
+    createdAt: DateTime!
+    title: String
+    content: String
+    author: User
+    authorId: Int
+}
+
+type User{
+    id: Int!
+    email: String
+    name: String
+    posts: Post[]
+}
